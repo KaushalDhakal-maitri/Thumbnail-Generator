@@ -53,16 +53,16 @@ const generateThumbnails = async (filePath) => {
 
 // Example Usage
 (async () => {
-  const docxFilePath = path.join(__dirname, "meeting.docx"); // Replace with your .docx file path
+  // const docxFilePath = path.join(__dirname, "meeting.docx"); // Replace with your .docx file path
   
-  // const pdfFilePath = path.join(__dirname, "dummy.pdf"); // Replace with your .pdf file path
+  const pdfFilePath = path.join(__dirname, "dummy.pdf"); // Replace with your .pdf file path
   // const imageFilePath = path.join(__dirname, "sample.jpg"); // Replace with your image file path
 
-  console.log("Generating thumbnail for .docx file...");
-  await generateThumbnails(docxFilePath);
+  // console.log("Generating thumbnail for .docx file...");
+  // await generateThumbnails(docxFilePath);
 
-  // console.log("Generating thumbnail for .pdf file...");
-  // await generateThumbnails(pdfFilePath);
+  console.log("Generating thumbnail for .pdf file...");
+  await generateThumbnails(pdfFilePath);
 
   // console.log("Generating thumbnail for image...");
   // await generateThumbnails(imageFilePath);

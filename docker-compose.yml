@@ -1,0 +1,8 @@
+version: "3.8"
+services:
+  thumbnail_generator:
+    build: .
+    volumes:
+      - ./output:/app/output # Mount the output folder for persistence
+    environment:
+      - NODE_ENV=production
